@@ -8,8 +8,8 @@ html {
 	-webkit-transition: background 1s ease-in-out;
 	   -moz-transition: background 1s ease-in-out;
 	     -o-transition: background 1s ease-in-out;
-	    -ms-transition: background 1s ease-in-out;    
-	transition: background 1s ease-in-out;
+	    -ms-transition: background 1s ease-in-out;
+	    	transition: background 1s ease-in-out;
 }
 
 body {
@@ -22,8 +22,8 @@ body {
 	line-height: 1.5em;
 	font-size:14px;
 	font-family: Helvetica, Arial, sans-serif;
-	color:#fff;
-	color:rgba(255,255,255,.8); 
+	color: #fff;
+	color: rgba(255,255,255,.8); 
 	font-weight: normal;
 	overflow-x:hidden;
 	max-width: 100%;

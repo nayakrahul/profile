@@ -1,0 +1,142 @@
+.mainmenu { 
+	z-index: 0;
+	width: 100%;
+	padding: 30px 0 0 0;
+	position: fixed;
+	@media (max-width: 992px) {
+		position: absolute;
+		z-index: 0;
+		width: 100%;
+		padding: 30px 0 0 0;
+	}
+
+	.open .dropdown-menu { 
+		top: 2px;
+		opacity: 1;
+	}
+
+	.dropdown-menu {
+		top: -50em;
+		left: 0px;
+		font-size: 20px;
+		font-family: Calibri;
+		padding: 0;
+		background: none;
+		border: 0 none;
+		border-radius: 2px;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		display: block;
+		opacity: 1.0;
+		-webkit-transition: all .45s;
+		   -moz-transition: all .45s;
+		        transition: all .45s;
+		
+		li>a {
+			color: #EEE;
+			&:focus {
+				color: coral;
+			}
+		}
+
+		.li-menu {
+			@media (max-width: 992px) {
+				display: inline-block;
+				display: inline;
+				float: left;
+			}
+
+			.active { 
+				font-weight: bold;
+				color: coral;
+			}
+
+			#menu-block { 
+				background: rgba(0,0,0,0);
+				border: none;
+				padding: 10px;
+				border-radius: 5px;
+				position: relative;
+    			text-decoration: none;
+				box-sizing: border-box;
+				transition: all 500ms ease;
+				&:hover {
+					color: coral;
+					&:before {
+						visibility: visible;
+						-webkit-transform: scaleX(1);
+							    transform: scaleX(1);
+					}
+				}
+				&:before {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 2px;
+					bottom: 0;
+					left: 0;
+					background-color: coral;
+					visibility: hidden;
+					-webkit-transform: scaleX(0);
+							transform: scaleX(0);
+					-webkit-transition: all 0.3s ease-in-out 0s;
+						    transition: all 0.3s ease-in-out 0s;
+				}
+
+				.menu {
+					font-family: 'Jura', sans-serif;
+					text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+					margin: 15px;
+					font-size: 30px;
+					@media (max-width: 412px) {
+						font-family: 'Jura', sans-serif;
+						text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+						margin: 15px;
+						font-size: 18px;
+					}
+					@media (min-width: 412px) and (max-width: 922px) {
+						font-family: 'Jura', sans-serif;
+						text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+						margin: 10px;
+						font-size: 25px;
+					}
+				}
+			}
+		}	
+	}
+}
+
+.navbar-toggle {
+	position:  absolute;
+	float: left;
+	display: block;
+	padding: 9px 10px;
+	background: rgba(0, 0, 0, 0.12);
+	background-image: none;
+	border: 0 none;
+	top:0px; 
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+	outline: 0;
+	opacity: 1;
+	-webkit-transition: all .45s;
+	   -moz-transition: all .45s;
+	        transition: all .45s;
+
+	.icon-bar {
+		display: block;
+		width: 22px;
+		height: 2px;
+		background: #fff;
+	}
+
+	.icon-bar + .icon-bar {
+		margin-top: 4px;
+	}
+}
+
+.open .navbar-toggle { 
+	top:-70px; 
+	opacity: 0;  
+}

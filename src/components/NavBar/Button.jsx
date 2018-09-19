@@ -11,7 +11,7 @@ class Button extends React.Component {
         <span className="icon-bar"></span>
       </button>
     );
- 	}
+    }
 }
 
 export default Button;

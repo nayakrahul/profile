@@ -11,6 +11,6 @@ const productionConfiguration = function (env) {
       new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify(NODE_ENV) }),
     ]
   };
-}
+};
 
 module.exports = merge.smart(baseConfig, optimizationConfig, productionConfiguration);

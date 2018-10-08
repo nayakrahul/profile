@@ -1,2 +1,0 @@
-# nayakrahul.github.io
-

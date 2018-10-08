@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nayakrahul/profile.git"
+    "url": "git+https://github.com/nayakrahul/nayakrahul.github.io.git"
   },
   "author": {
     "name": "Rahul Nayak",
@@ -50,5 +50,5 @@
   "bugs": {
     "url": "https://github.com/nayakrahul/profile/issues"
   },
-  "homepage": "https://nayakrahul.github.com/profile"
+  "homepage": "https://nayakrahul.github.com"
 }

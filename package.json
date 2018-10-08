@@ -36,7 +36,7 @@
     "build": "webpack --mode production --config config/webpack.prod.config.js --env.NODE_ENV=production --progress",
     "predeploy": "npm run transpile && npm run build",
     "start:prod": "npm run predeploy && node server",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -b master"
   },
   "repository": {
     "type": "git",
@@ -48,7 +48,7 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nayakrahul/profile/issues"
+    "url": "https://github.com/nayakrahul/nayakrahul.github.io/issues"
   },
   "homepage": "https://nayakrahul.github.com"
 }

@@ -1,4 +1,4 @@
-#head { 
+#head {
 	display: block;
 
 	.hello-wrapper {
@@ -16,19 +16,75 @@
 			margin-bottom: 15px;
 		}
 
-		.subtitle { 
+		.subtitle {
 			line-height: .9em;
 			font-size: 4em;
 			margin-top: 0;
-			margin-bottom: 40px; 
+			margin-bottom: 40px;
 		}
 
-		.tagline { 
+		.tagline {
 			font-size: 1.8em;
 			font-family: 'Tw Cen MT';
 			line-height: 1.3em;
 			font-weight: normal;
 			margin-bottom: 75px;
+		}
+
+		*, *:after, *::before {
+		    -webkit-box-sizing: border-box;
+		    	 -moz-box-sizing: border-box;
+		    				box-sizing: border-box;
+		}
+
+		.cl-effect a {
+			font-family: 'Raleway', sans-serif;
+			position: relative;
+			display: inline-block;
+			margin: 15px 25px;
+			outline: none;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: 400;
+			text-shadow: 0 0 1px rgba(255,255,255,0.3);
+			font-size: 2.0em;
+			padding: 25px 40px;
+			&:hover {
+				outline: none;
+				&::before {
+					opacity: 0;
+					-webkit-transform: translateY(5px) translateX(0px);
+						 -moz-transform: translateY(5px) translateX(0px);
+						 			transform: translateY(5px) translateX(0px);
+				}
+				&::after  {
+					opacity: 1;
+					-webkit-transform: translateY(0px) translateX(0px);
+						 -moz-transform: translateY(0px) translateX(0px);
+						 			transform: translateY(0px) translateX(0px);
+				}
+			}
+			&::before, &::after  {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border: 4px solid #505050;
+				content: '';
+				-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+					 -moz-transition: -moz-transform 0.5s, opacity 0.5s;
+					 			transition: transform 0.5s, opacity 0.5s;
+			}
+			&::after  {
+				border-color: #fff;
+				opacity: 0;
+				-webkit-transform: translateY(-14px) translateX(12px);
+				-moz-transform: translateY(-14px) translateX(12px);
+				transform: translateY(-14px) translateX(12px);
+			}
 		}
 	}
 }

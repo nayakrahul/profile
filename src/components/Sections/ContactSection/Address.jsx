@@ -16,7 +16,7 @@ class Address extends React.Component {
             <h2 className="text-center address">
               <u style={addressStyle}>Address</u>
             </h2>
-            <h5 className="text-center">
+            <h5 className="text-center address-text">
               Kanan Vihar - Phase II<br></br>
               Nandan Kanan Road<br></br>
               Patia, Chandrasekharpur<br></br>

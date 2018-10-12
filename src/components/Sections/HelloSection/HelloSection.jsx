@@ -17,7 +17,7 @@ class Hello extends React.Component {
                   <sup><i className="fa fa-quote-left fa-lg"></i></sup>  Put your heart, mind, and soul into even your smallest acts.<br></br>
                   This is the secret of success.  <sup><i className="fa fa-quote-right fa-lg"></i></sup>
                 </h5>
-                <nav class="cl-effect">
+                <nav className="cl-effect">
                   <a href="/resume.pdf" target="_blank">Resume</a>
         				</nav>
               </div>

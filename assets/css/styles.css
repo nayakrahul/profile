@@ -1,5 +1,5 @@
 html {
-	background-color: #111111;
+	background-color: #222222;
 	min-height:100%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
@@ -14,7 +14,7 @@ html {
 
 body {
 	background: transparent;
-	min-height:100%; 
+	min-height:100%;
 	text-shadow: 0 0 10px #000;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -23,7 +23,7 @@ body {
 	font-size:14px;
 	font-family: Helvetica, Arial, sans-serif;
 	color: #fff;
-	color: rgba(255,255,255,.8); 
+	color: rgba(255,255,255,.8);
 	font-weight: normal;
 	overflow-x:hidden;
 	max-width: 100%;

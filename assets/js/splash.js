@@ -1,8 +1,6 @@
 'use strict';
 
-$(document).ready(function () {
-  setTimeout(function () {
+$(window).load(function () {
+    $('#loader-wrapper').delay(500).fadeOut();
     $('body').addClass('loaded');
-    $('h1').css('color', '#222222');
-  }, 900);
 });

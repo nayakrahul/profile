@@ -6,7 +6,7 @@ html {
        -o-background-size: cover;
           background-size: cover;
   -webkit-transition: background 1s ease-in-out;
-    -moz-transition: background 1s ease-in-out;
+     -moz-transition: background 1s ease-in-out;
       -ms-transition: background 1s ease-in-out;
        -o-transition: background 1s ease-in-out;
           transition: background 1s ease-in-out;
@@ -20,11 +20,12 @@ body {
    -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   line-height: 1.5em;
-  font-size:14px;
+  font-size: 14px;
   font-family: Helvetica, Arial, sans-serif;
   color: #fff;
   color: rgba(255,255,255,.8);
   font-weight: normal;
   overflow-x: hidden;
+  overflow-y: scroll;
   max-width: 100%;
 }

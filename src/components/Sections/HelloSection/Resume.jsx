@@ -5,7 +5,7 @@ import './HelloSection.scss';
 class Resume extends React.Component {
   render() {
     return (
-        <nav className="cl-effect">
+        <nav className="resume">
           <a href="/resume.pdf" target="_blank">Resume</a>
 				</nav>
     );

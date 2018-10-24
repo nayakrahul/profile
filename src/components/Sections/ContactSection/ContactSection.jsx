@@ -2,7 +2,8 @@ import React from 'react';
 import Address from './Address.jsx';
 import MobileEmail from './MobileEmail.jsx';
 import SocialMedia from './SocialMedia.jsx';
-import styles from './ContactSection.scss';
+import Footer from './Footer.jsx';
+import './ContactSection.scss';
 
 
 class Contact extends React.Component {
@@ -18,7 +19,7 @@ class Contact extends React.Component {
                 <SocialMedia/>
               </div>
             </div>
-            <footer>&copy; 2018 Rahul Nayak</footer>
+            <Footer/>
           </div>
         </div>
       </section>

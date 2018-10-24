@@ -1,7 +1,7 @@
 import React from 'react';
 import Projects from './Projects.jsx';
 import Blogs from './Blogs.jsx';
-import styles from './WorkSection.scss';
+import './WorkSection.scss';
 
 
 class Work extends React.Component {

@@ -8,16 +8,17 @@ import styles from './ContactSection.scss';
 class Contact extends React.Component {
   render() {
     return (
-      <section className="section" id="contacts"> 
+      <section className="section" id="contacts">
         <div className="container">
           <div className="contacts-wrapper">
             <div className="row">
               <div className="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
                 <Address/>
                 <MobileEmail/>
-                <SocialMedia/>  
+                <SocialMedia/>
               </div>
             </div>
+            <footer>&copy; 2018 Rahul Nayak</footer>
           </div>
         </div>
       </section>

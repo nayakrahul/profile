@@ -9,14 +9,14 @@ class Mobile extends React.Component {
         <div className="box1">
           <div className="blue-btn">
             <div className="first-link">
-              <i className="fa fa-mobile"></i>   Mobile
+              <i className="fa fa-mobile"></i>
             </div>
             <a href="tel:+91 8953455796">
-            <b>8953455796</b>
+              <span>8953455796</span>
             </a>
           </div>
         </div>
-      </h2>       
+      </h2>
     );
   }
 }
@@ -27,15 +27,15 @@ class Email extends React.Component {
       <h2 className="btn btn-link">
         <div className="box1">
           <div className="blue-btn">
-            <a className="first-link">
-              <i className="fa fa-envelope"></i>   Email
-            </a>
+            <div className="first-link">
+              <i className="fa fa-envelope"></i>
+            </div>
             <a href="mailto:rahulnk521@gmail.com">
-            <b>rahulnk521@gmail.com</b>
+              <span>rahulnk521@gmail.com</span>
             </a>
           </div>
         </div>
-      </h2>       
+      </h2>
     );
   }
 }
@@ -45,7 +45,7 @@ class MobileEmail extends React.Component {
     return (
       <div className="row">
         <Mobile/>
-        <Email/>    
+        <Email/>
       </div>
     );
   }

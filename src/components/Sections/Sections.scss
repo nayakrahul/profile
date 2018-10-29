@@ -34,6 +34,9 @@
 			margin:0px;
 			text-align: center;
 			text-transform: uppercase;
+			@media (max-width: 373px) {
+				font-size: 1em;
+			}
 		}
 	}
 }

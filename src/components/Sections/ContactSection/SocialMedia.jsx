@@ -23,6 +23,10 @@ class SocialMedia extends React.Component {
           'url': 'https:\//www.facebook.com/rahulnayak619',
           'icon': 'fa fa-facebook fa-lg'
       	},
+				{
+          'url': 'https:\//www.twitter.com/Carbon_RAHUL',
+          'icon': 'fa fa-twitter fa-lg'
+      	},
       	{
           'url': 'https:\//instagram.com/___rahul.nayak___/',
           'icon': 'fa fa-instagram fa-lg'
@@ -30,10 +34,6 @@ class SocialMedia extends React.Component {
       	{
           'url': 'https:\//www.linkedin.com/in/rahulnayak114',
           'icon': 'fa fa-linkedin fa-lg'
-      	},
-      	{
-          'url': 'https:\//www.snapchat.com/add/rahul.0516',
-          'icon': 'fa fa-snapchat fa-lg'
       	},
       	{
           'url': 'https:\//github.com/nayakrahul',
@@ -74,7 +74,7 @@ class SocialMedia extends React.Component {
 											);
     return (
       <div className="row">
-				<div className="social-icons text-center">	
+				<div className="social-icons text-center">
 					<div>
 						<ul className="list-inline list-social">
 							{itemsList1}

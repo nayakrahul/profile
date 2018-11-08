@@ -23,10 +23,6 @@ class SocialMedia extends React.Component {
           'url': 'https:\//www.facebook.com/rahulnayak619',
           'icon': 'fa fa-facebook fa-lg'
       	},
-				{
-          'url': 'https:\//www.twitter.com/Carbon_RAHUL',
-          'icon': 'fa fa-twitter fa-lg'
-      	},
       	{
           'url': 'https:\//instagram.com/___rahul.nayak___/',
           'icon': 'fa fa-instagram fa-lg'
@@ -60,13 +56,13 @@ class SocialMedia extends React.Component {
  	};
 
   render() {
-  	var items1 = this.state.socialMedias.slice(0,5);
+  	var items1 = this.state.socialMedias.slice(0,4);
     var itemsList1 = items1.map((item, index) =>
 	    									<li className="grow" key={index}>
 													<Icon itemProp={item}/>
 												</li>
 											);
-    var items2 = this.state.socialMedias.slice(5);
+    var items2 = this.state.socialMedias.slice(4);
     var itemsList2 = items2.map((item, index) =>
 	    									<li className="grow" key={index}>
 													<Icon itemProp={item}/>

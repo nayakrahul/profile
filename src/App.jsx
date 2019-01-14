@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar.jsx';
 import Hello from './components/Sections/HelloSection/HelloSection.jsx';
 import Work from './components/Sections/WorkSection/WorkSection.jsx';
 import Contact from './components/Sections/ContactSection/ContactSection.jsx';
+import NotFound from './components/NotFound/NotFound.jsx'
 
 
 class Found extends React.Component {

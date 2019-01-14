@@ -1,3 +1,41 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 12px;
+  background: #343434;
+  color: white;
+  font-family: Monospace;
+  font-size: 24px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 910px) {
+  main {
+    font-size: 30px;
+  }
+}
+@media (max-width: 704px) {
+  main {
+    font-size: 20px;
+  }
+}
+@media (max-width: 492px) {
+  main {
+    font-size: 15px;
+  }
+}
+@media (max-width: 372px) {
+  main {
+    font-size: 10px;
+  }
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -36,39 +74,12 @@ svg {
 }
 
 main {
-  height: 100vh;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
-  padding: 12px;
-  background: #222222;
-  color: white;
-  font-family: Monospace;
-  font-size: 40px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 }
-@media (max-width: 910px) {
-  main {
-    font-size: 30px;
-  }
-}
-@media (max-width: 704px) {
-  main {
-    font-size: 20px;
-  }
-}
-@media (max-width: 492px) {
-  main {
-    font-size: 15px;
-  }
-}
-@media (max-width: 372px) {
-  main {
-    font-size: 10px;
-  }
-}
+
 main > div {
   display: flex;
   align-items: center;

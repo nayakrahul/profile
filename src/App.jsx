@@ -5,10 +5,9 @@ import NavBar from './components/NavBar/NavBar.jsx';
 import Hello from './components/Sections/HelloSection/HelloSection.jsx';
 import Work from './components/Sections/WorkSection/WorkSection.jsx';
 import Contact from './components/Sections/ContactSection/ContactSection.jsx';
-import NotFound from './components/NotFound/NotFound.jsx'
 
 
-class Found extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <div>
@@ -18,19 +17,6 @@ class Found extends React.Component {
         <Work/>
         <Contact/>
       </div>
-    );
-  }
-}
-
-class App extends React.Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <Switch>
-          <Route exact path='/' component={Found}/>
-          <Route path='*' component={NotFound} />
-        </Switch>
-      </BrowserRouter>
     );
   }
 }

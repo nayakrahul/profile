@@ -12,7 +12,7 @@ body {
   background: #222222;
   color: white;
   font-family: Monospace;
-  font-size: 24px;
+  font-size: 40;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -114,6 +114,7 @@ main > div span {
 
 main > div span a {
   color: inherit;
+  text-decoration: none;
   display: block;
   cursor: pointer;
   animation: pulseColor 1000ms linear 3100ms forwards;

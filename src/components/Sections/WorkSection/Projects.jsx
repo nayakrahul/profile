@@ -7,7 +7,7 @@ class Projects extends React.Component {
     return (
       <div className="row">
         <nav className="projects">
-          <a href="https://github.com/nayakrahul" data-hover="Projects">
+          <a href="https://github.com/nayakrahul" target="_blank" data-hover="Projects">
             <span>Projects</span>
           </a>
         </nav>

@@ -87,6 +87,7 @@
 					text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
 					margin: 15px;
 					font-size: 30px;
+					letter-spacing: 1px;
 					@media (max-width: 373px) {
 						font-family: 'Jura', sans-serif;
 						text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
@@ -98,6 +99,7 @@
 						text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
 						margin: 12px;
 						font-size: 20px;
+						margin-left: 5px;
 					}
 					@media (min-width: 412px) and (max-width: 922px) {
 						font-family: 'Jura', sans-serif;

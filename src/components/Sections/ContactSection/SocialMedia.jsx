@@ -44,10 +44,6 @@ class SocialMedia extends React.Component {
           'icon': 'fa fa-medium fa-lg'
       	},
       	{
-          'url': 'https:\//www.pinterest.com/booyakarahul/',
-          'icon': 'fa fa-pinterest fa-lg'
-      	},
-      	{
           'url': 'https:\//www.quora.com/profile/Rahul-Nayak-9',
           'icon': 'fa fa-quora fa-lg'
       	},

@@ -7,6 +7,25 @@ import Contact from './components/Sections/ContactSection/ContactSection.jsx';
 
 
 class App extends React.Component {
+  componentDidMount() {
+      window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+      window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    if( $(this).scrollTop() != 0 )
+    {
+      $(".button_container").css('opacity', '0.3');
+    }
+    else
+    {
+      $(".button_container").css('opacity', '1');
+    }
+  }
+
   render() {
     return (
       <div>

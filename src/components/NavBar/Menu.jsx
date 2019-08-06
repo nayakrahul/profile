@@ -5,11 +5,15 @@ import './NavBar.scss';
 class Menu extends React.Component {
   render() {
     return (
-      <ul className="dropdown-menu" role="menu" aria-labelledby="dLabel">
-        <li className="li-menu" ><a href="#head" className="active" id= "menu-block"><p className="menu">Hello</p></a></li>
-        <li className="li-menu"><a href="#work" id= "menu-block"><p className="menu">Work</p></a></li>
-        <li className="li-menu"><a href="#contacts" id= "menu-block"><p className="menu">Get in Touch</p></a></li>
-      </ul>
+      <div className={`overlay ${this.props.isOpen ? 'open' : ''}`} id="overlay">
+        <nav className="overlay-menu">
+          <ul>
+            <li><a href="#head">Hello</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contacts">Get in Touch</a></li>
+          </ul>
+        </nav>
+      </div>
     );
   }
 }

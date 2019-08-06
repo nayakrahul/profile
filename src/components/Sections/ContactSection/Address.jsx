@@ -4,7 +4,7 @@ import './ContactSection.scss';
 
 const addressStyle = {
   textDecoration: 'none',
-  borderBottom: '1px solid white'
+  borderBottom: '1px solid #222222'
 };
 
 class Address extends React.Component {

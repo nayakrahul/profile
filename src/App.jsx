@@ -1,13 +1,31 @@
 import React from 'react';
-import Loader from './components/Loader/Loader.jsx';
-import NavBar from './components/NavBar/NavBar.jsx';
-import Hello from './components/Sections/HelloSection/HelloSection.jsx';
-import Work from './components/Sections/WorkSection/WorkSection.jsx';
-import Contact from './components/Sections/ContactSection/ContactSection.jsx';
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from './Routes.jsx';
 
 
 class App extends React.Component {
   componentDidMount() {
+      $(window).load(function(){
+          $('#loader-wrapper').delay(500).fadeOut();
+          $('body').addClass('loaded');
+      });
+
+      var current_item = 0;
+      var section_hide_time = 1000;
+      var section_show_time = 1000;
+      $('a', '.overlay-menu').click(function() {
+        if( ! $(this).hasClass('active') ) {
+          current_item = this;
+          $('.section:visible').fadeOut( section_hide_time, function() {
+            $('a', '.overlay-menu').removeClass( 'active' );
+            $(current_item).addClass( 'active' );
+            var new_section = $( $(current_item).attr('href') );
+            new_section.fadeIn( section_show_time );
+          } );
+        }
+        return false;
+      });
+
       window.addEventListener('scroll', this.handleScroll);
   }
 
@@ -28,13 +46,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Loader/>
-        <NavBar/>
-        <Hello/>
-        <Work/>
-        <Contact/>
-      </div>
+      <Router>
+        <Routes/>
+      </Router>
     );
   }
 }

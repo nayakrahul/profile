@@ -9,7 +9,7 @@ import './ContactSection.scss';
 class Contact extends React.Component {
   render() {
     return (
-      <section className="section" id="contacts">
+      <section className="section" id="contact">
         <div className="container">
           <div className="contacts-wrapper">
             <div className="row">

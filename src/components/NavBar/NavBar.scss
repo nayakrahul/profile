@@ -126,6 +126,15 @@ $button-width: 35px;
       min-height: 50px;
       position: relative;
       opacity: 0;
+      .active {
+        animation: glow 1s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+
+      .non-active {
+        animation: glowfade 1s ease-in-out;
+        animation-fill-mode: forwards;
+      }
 
       a {
         position: relative;
@@ -133,9 +142,8 @@ $button-width: 35px;
         text-decoration: none;
         overflow: hidden;
 
-        &:hover:after,
-         &:focus:after,
-         &:active:after {
+        &:hover:after
+         {
            width: 110%;
          }
 
@@ -164,4 +172,40 @@ $button-width: 35px;
     opacity: 1;
     left: 0;
   }
+}
+
+@keyframes glow {
+ 0% {
+   text-shadow: none;
+ }
+ 25% {
+   text-shadow: 0 0 10px #fff;
+ }
+ 50% {
+   text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+ }
+ 75% {
+   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+ }
+ 100% {
+   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+ }
+}
+
+@keyframes glowfade {
+ 100% {
+   text-shadow: none;
+ }
+ 75% {
+   text-shadow: 0 0 10px #fff;
+ }
+ 50% {
+   text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+ }
+ 25% {
+   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+ }
+ 0% {
+   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+ }
 }

@@ -14,14 +14,16 @@ class App extends React.Component {
       });
 
       var current_item = 0;
-      var section_hide_time = 1000;
-      var section_show_time = 1000;
+      var section_hide_time = 800;
+      var section_show_time = 800;
       $('a', '.overlay-menu').click(function() {
         if( ! $(this).hasClass('active') ) {
           current_item = this;
+          $('a', '.overlay-menu').removeClass( 'active' );
+          $(current_item).addClass( 'active' );
+          $('a', '.overlay-menu').addClass( 'non-active' );
+          $(current_item).removeClass( 'non-active' );
           $('.section:visible').fadeOut( section_hide_time, function() {
-            $('a', '.overlay-menu').removeClass( 'active' );
-            $(current_item).addClass( 'active' );
             var new_section = $( $(current_item).attr('href') );
             new_section.fadeIn( section_show_time );
           } );

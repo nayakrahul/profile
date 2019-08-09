@@ -8,7 +8,7 @@ class Menu extends React.Component {
       <div className={`overlay ${this.props.isOpen ? 'open' : ''}`} id="overlay">
         <nav className="overlay-menu">
           <ul>
-            <li><a href="#hello">Hello</a></li>
+            <li><a href="#head">Hello</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contact">Get in Touch</a></li>
           </ul>

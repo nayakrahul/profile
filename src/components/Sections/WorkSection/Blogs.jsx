@@ -7,7 +7,7 @@ class Blogs extends React.Component {
     return (
       <div className="row">
         <nav className="blogs">
-          <a href="https://rahuliitk.quora.com" target="_blank" data-hover="Blogs">
+          <a href="https://medium.com/@booyakarahul" target="_blank" data-hover="Blogs">
             <span>Blogs</span>
           </a>
         </nav>

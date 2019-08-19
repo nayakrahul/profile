@@ -15,7 +15,6 @@ html {
 body {
   background: transparent;
   min-height: 100%;
-  text-shadow: 0 0 10px #fff;
   -moz-osx-font-smoothing: grayscale;
    -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;

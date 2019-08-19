@@ -15,7 +15,9 @@
 		.title {
 			font-size: 15em;
 			margin-bottom: 15px;
-			font-weight: bold;
+			font-family: 'WaltographRegular';
+			 font-weight: normal;
+			 font-style: normal;
 			@media (max-width: 921px) {
 				font-size: 8em;
 			}
@@ -29,11 +31,13 @@
 		}
 
 		.tagline {
-			font-size: 1.7em;
+			font-size: 1.8em;
+			letter-spacing: 0.2em;
 			line-height: 1.3em;
 			font-weight: normal;
 			margin-bottom: 40px;
 			color: #444444;
+			font-family: 'Acme';
 		}
 
 		*, *:after, *::before {

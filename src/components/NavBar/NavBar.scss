@@ -128,12 +128,12 @@ $button-width: 35px;
       position: relative;
       opacity: 0;
       .active {
-        animation: glow 1s ease-in-out;
+        animation: glow 0.5s ease-in-out;
         animation-fill-mode: forwards;
       }
 
       .non-active {
-        animation: glowfade 1s ease-in-out;
+        animation: glowfade 0.5s ease-in-out;
         animation-fill-mode: forwards;
       }
 

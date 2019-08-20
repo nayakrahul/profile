@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'WaltographRegular';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('WaltographRegular'),
+    url('../../../../public/assets/fonts/waltograph42.otf') format('opentype');
+}
+
+
 #head {
 	display: block;
 

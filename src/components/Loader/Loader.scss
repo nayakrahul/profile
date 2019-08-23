@@ -43,6 +43,7 @@
 			.loader-text {
 			  color: #fff;
 			  mix-blend-mode: difference;
+        will-change: opacity;
 			}
 		}
 	}

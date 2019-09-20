@@ -7,7 +7,7 @@ import '../Sections.scss';
 class Hello extends React.Component {
   render() {
     return (
-      <section className="section" id="head">
+      <section className="section" id="hello">
         <div className="container">
           <div className ="hello-wrapper">
             <div className="row">

@@ -8,18 +8,18 @@ class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.onUpdate = this.onUpdate.bind(this);
-    this.state = { isOpen: false };
+    this.state = { isOpen: false, isActive: false };
   }
 
   onUpdate() {
-    this.setState({isOpen: !this.state.isOpen});
+    this.setState({isOpen: !this.state.isOpen, isActive: !this.state.isActive});
   }
 
   render() {
     return (
       <div>
-        <Button onUpdate={this.onUpdate}/>
-        <Menu isOpen={this.state.isOpen}/>
+        <Button isActive={this.state.isActive} onUpdate={this.onUpdate}/>
+        <Menu isOpen={this.state.isOpen} onUpdate={this.onUpdate}/>
       </div>
     );
   }

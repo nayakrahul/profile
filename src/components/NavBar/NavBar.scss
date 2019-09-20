@@ -73,7 +73,7 @@ $button-width: 35px;
   height: 0%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity 1s, visibility 1s, height 1s;
   overflow: hidden;
   z-index: 100;
 
@@ -83,17 +83,14 @@ $button-width: 35px;
     height: 100%;
 
     li {
-      animation: fadeInRight .5s ease forwards;
-      animation-delay: .35s;
+      animation: fadeInRight 0.8s ease forwards;
+      animation-delay: 0.4s;
 
       &:nth-of-type(2) {
-        animation-delay: .4s;
-      }
-      &:nth-of-type(3) {
         animation-delay: .45s;
       }
-      &:nth-of-type(4) {
-        animation-delay: .50s;
+      &:nth-of-type(3) {
+        animation-delay: .5s;
       }
     }
   }
@@ -137,17 +134,20 @@ $button-width: 35px;
         animation-fill-mode: forwards;
       }
 
-      a {
+      span {
         position: relative;
         color: $color-link;
         text-decoration: none;
         overflow: hidden;
         font-family: Pacifico;
 
-        &:hover:after
-         {
-           width: 110%;
-         }
+        &:hover {
+          cursor: pointer;
+
+          &:after {
+             width: 110%;
+          }
+        }
 
         &:after {
           content: '';

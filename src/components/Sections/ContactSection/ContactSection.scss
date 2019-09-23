@@ -116,9 +116,11 @@
 			}
 
 			.grow {
-				transition: all .2s ease-in-out;
-				&:hover {
-					transform: scale(2);
+				@media (min-width: 992px) {
+					transition: all .2s ease-in-out;
+					&:hover {
+						transform: scale(2);
+					}
 				}
 				@media (max-width: 992px) {
 					float: center;

@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
 $color-background: #F5F5F5;
-$color-main: #1abc9c;
+$color-main: #000;
 $color-active: #FFF;
 $color-link: #FFF;
 
 $button-height: 27px;
-$button-width: 35px;
+$button-width: 40px;
 
 .button_container {
   position: fixed;
@@ -24,21 +24,36 @@ $button-width: 35px;
   }
 
   &:hover {
-    opacity: .7;
+    opacity: 0.9;
+    @media (min-width: 992px) {
+      .middle {
+        width: 25px;
+        left: 20%;
+      }
+    }
   }
 
   &.active {
     .top {
-      transform: translateY(11px) translateX(0) rotate(45deg);
+      top: 13px;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
       background: $color-active;
     }
     .middle {
       opacity: 0;
+      left: -60px;
       background: $color-active;
     }
 
     .bottom {
-      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      top: 13px;
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      transform: rotate(-135deg);
       background: $color-active;
     }
   }
@@ -49,17 +64,18 @@ $button-width: 35px;
     height: 5px;
     width: 100%;
     position: absolute;
+    border-radius: 20px;
     top: 0;
     left: 0;
     transition:  all .35s ease;
     cursor: pointer;
 
     &:nth-of-type(2) {
-      top: 11px;
+      top: 13px;
     }
 
     &:nth-of-type(3) {
-      top: 22px;
+      top: 26px;
     }
   }
 }
@@ -78,7 +94,7 @@ $button-width: 35px;
   z-index: 100;
 
   &.open {
-    opacity: .9;
+    opacity: 0.99;
     visibility: visible;
     height: 100%;
 

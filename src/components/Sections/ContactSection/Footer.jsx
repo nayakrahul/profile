@@ -5,7 +5,9 @@ import './ContactSection.scss';
 class Footer extends React.Component {
   render() {
     return (
-      <footer>&copy; {new Date().getFullYear()} Rahul Nayak</footer>
+      <footer className="animated animatedFadeInUp fadeInUp" style={{animationDelay: '1s'}}>
+      &copy; {new Date().getFullYear()} Rahul Nayak
+      </footer>
     );
   }
 }

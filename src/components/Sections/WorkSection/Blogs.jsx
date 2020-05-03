@@ -6,7 +6,7 @@ class Blogs extends React.Component {
   render() {
     return (
       <div className="row">
-        <nav className="blogs">
+        <nav className="blogs animated animatedFadeInUp fadeInUp" style={{animationDelay: '0.5s'}}>
           <a href="https://medium.com/@booyakarahul" target="_blank" data-hover="Blogs">
             <span>Blogs</span>
           </a>

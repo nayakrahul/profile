@@ -11,7 +11,7 @@ class Address extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className="box2">
+        <div className="box2 animated animatedFadeInUp fadeInUp" style={{animationDelay: '0.2s'}}>
           <div className="block" align="center">
             <h2 className="text-center address">
               <u style={addressStyle}>Address</u>

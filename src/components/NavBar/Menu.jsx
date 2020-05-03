@@ -14,14 +14,14 @@ class Menu extends React.Component {
     const section_show_time = 800;
     if( ! $(e.target).hasClass('active') ) {
       current_item = e.target;
-      $('span', '.overlay-menu').removeClass( 'active' );
-      $(current_item).addClass( 'active' );
-      $('span', '.overlay-menu').addClass( 'non-active' );
-      $(current_item).removeClass( 'non-active' );
-      $('.section:visible').fadeOut( section_hide_time, function() {
+      $('span', '.overlay-menu').removeClass('active');
+      $(current_item).addClass('active');
+      $('span', '.overlay-menu').addClass('non-active');
+      $(current_item).removeClass('non-active');
+      $('.section:visible').fadeOut(section_hide_time, function() {
         var new_section = $(current_item.id);
-        new_section.fadeIn( section_show_time );
-      } );
+        new_section.fadeIn(section_show_time);
+      });
     }
     this.props.onUpdate();
   }

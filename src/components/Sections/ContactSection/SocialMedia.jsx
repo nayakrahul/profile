@@ -67,12 +67,12 @@ class SocialMedia extends React.Component {
     return (
       <div className="row">
 				<div className="social-icons text-center">
-					<div>
+					<div className="animated animatedFadeInUp fadeInUp" style={{animationDelay: '0.5s'}}>
 						<ul className="list-inline list-social">
 							{itemsList1}
 						</ul>
 					</div>
-					<div>
+					<div className="animated animatedFadeInUp fadeInUp"style={{animationDelay: '0.6s'}}>
 						<ul className="list-inline list-social">
 							{itemsList2}
 						</ul>

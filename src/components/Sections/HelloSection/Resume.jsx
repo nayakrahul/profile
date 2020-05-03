@@ -5,7 +5,7 @@ import './HelloSection.scss';
 class Resume extends React.Component {
   render() {
     return (
-        <nav className="resume">
+        <nav className="resume animated animatedFadeInUp fadeInUp" style={{animationDelay: '1.5s'}}>
           <a href="/resume.pdf" target="_blank">Resume</a>
 				</nav>
     );

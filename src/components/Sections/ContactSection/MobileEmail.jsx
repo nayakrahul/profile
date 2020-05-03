@@ -5,7 +5,7 @@ import './ContactSection.scss';
 class Mobile extends React.Component {
   render() {
     return (
-      <h2 className="btn btn-link">
+      <h2 className="btn btn-link animated animatedFadeInUp fadeInUp" style={{animationDelay: '0.3s'}}>
         <div className="box1">
           <div className="blue-btn">
             <div className="first-link">
@@ -24,7 +24,7 @@ class Mobile extends React.Component {
 class Email extends React.Component {
   render() {
     return (
-      <h2 className="btn btn-link">
+      <h2 className="btn btn-link animated animatedFadeInUp fadeInUp" style={{animationDelay: '0.3s'}}>
         <div className="box1">
           <div className="blue-btn">
             <div className="first-link">

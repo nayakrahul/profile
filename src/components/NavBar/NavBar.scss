@@ -25,12 +25,6 @@ $button-width: 40px;
 
   &:hover {
     opacity: 0.9;
-    @media (min-width: 992px) {
-      .middle {
-        width: 25px;
-        left: 20%;
-      }
-    }
   }
 
   &.active {
@@ -67,7 +61,7 @@ $button-width: 40px;
     border-radius: 20px;
     top: 0;
     left: 0;
-    transition:  all 1s ease;
+    transition:  all 1.6s ease;
     cursor: pointer;
 
     &:nth-of-type(2) {

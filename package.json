@@ -12,6 +12,7 @@
     "css-loader": "^1.0.0",
     "express": "^4.16.3",
     "gh-pages": "^2.2.0",
+    "http-server": "^0.12.3",
     "node-sass": "^4.9.3",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
@@ -38,6 +39,7 @@
     "build": "webpack --mode production --config config/webpack.prod.config.js --env.NODE_ENV=production --progress",
     "predeploy": "npm run transpile && npm run build",
     "start:prod": "npm run predeploy && node server",
+    "start:sw": "http-server ./dist",
     "deploy": "gh-pages -d dist -b master"
   },
   "repository": {

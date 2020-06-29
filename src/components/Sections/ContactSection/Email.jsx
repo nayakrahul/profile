@@ -18,7 +18,7 @@ class Email extends React.Component {
             </div>
           </div>
         </h2>
-      <div>
+      </div>
     );
   }
 }

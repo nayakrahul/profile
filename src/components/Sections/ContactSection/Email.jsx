@@ -6,7 +6,7 @@ class Email extends React.Component {
   render() {
     return (
       <div className="row">
-        <h2 className="btn btn-link animated animatedFadeInUp fadeInUp" style={{animationDelay: '0.3s'}}>
+        <h2 className="btn btn-link animated animatedFadeInUp fadeInUp" style={{animationDelay: '0.2s'}}>
           <div className="box1">
             <div className="blue-btn">
               <div className="first-link">

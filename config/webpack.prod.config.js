@@ -1,5 +1,5 @@
 var webpack = require('webpack');
-var merge = require('webpack-merge');
+var {merge} = require('webpack-merge');
 
 var baseConfig = require('./webpack.config');
 var optimizationConfig = require('./webpack.opt.config');
@@ -13,4 +13,4 @@ const productionConfiguration = function (env) {
   };
 };
 
-module.exports = merge.smart(baseConfig, optimizationConfig, productionConfiguration);
+module.exports = merge(baseConfig, optimizationConfig, productionConfiguration);
